@@ -79,7 +79,7 @@ public class BattleshipFrame  extends JFrame
             gridBtns[row][col].setBackground(Color.RED);
 
         }
-        else if(cell.getStatus().equals("Miss")){
+        else if(cell.getStatus().equals("MISS")){
             gridBtns[row][col].setText("M");
             gridBtns[row][col].setBackground(Color.YELLOW);
         }

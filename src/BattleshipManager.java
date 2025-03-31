@@ -99,15 +99,6 @@ public class BattleshipManager
     public void resetGame(){
         board = new BattleshipBoard();
         resetCounters();
-
-        for (int row = 0; row < 10; row++) {
-            for (int col = 0; col < 10; col++) {
-                BattleshipCell cell = board.getCell(row, col);
-                cell.resetClicked();
-                cell.setOccupied(false);
-                cell.setStatus("BLANK");
-            }
-        }
     }
 
 
